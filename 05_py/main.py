@@ -1,9 +1,7 @@
-"""
-Wen Hao Dong
-SoftDev
-K05 -- Random Name Selector Amalgamate
-2021-09-20
-"""
+# Wen Hao Dong
+# SoftDev
+# K05 -- Random Name Selector Amalgamate
+# 2021-09-20
 
 import random
 
