@@ -1,7 +1,7 @@
 """
 Wen Hao Dong
 SoftDev
-Create two lists of names, one for period one and one for period two, and print a random name.
+Random Name Selector
 2021-09-20
 """
 
