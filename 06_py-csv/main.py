@@ -1,3 +1,18 @@
+# Wen Hao Dong
+# SoftDev
+# K06 -- StI/O: Divine your Destiny!
+#
+# Reads a given csv file (occupations.csv) line by line,
+# splits the line into the Job Class and Percentage,
+# and stores them into a dictionary.
+#
+# Input the jobs and percentages as the population
+# and weights parameters to the random.choices function
+# respectively which returns a weighted random selection of
+# one of the jobs based on the percentage.
+#
+# 2021/09/28
+
 import random
 
 
