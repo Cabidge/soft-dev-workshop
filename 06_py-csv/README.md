@@ -34,3 +34,5 @@ fruits = {
 stores a number of fruits and associates them with their color, and later on
 can be accessed with the syntax `fruits[fruit_name]` to get the appropriate
 color.
+
+# TODO: list, basics of github-flavoured markdown, weighted randomized selection
