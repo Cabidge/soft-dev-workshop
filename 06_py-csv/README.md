@@ -75,7 +75,7 @@ while you're writing it.
 
 In Python's built in random module, it contains a random.choices function that
 can automatically select a random element from a list based on the given
-weights. The following is shows how the algorithm works.
+weights. The following shows how the algorithm works.
 
 #### Setup
 
