@@ -1,0 +1,29 @@
+The Bionic Brains Wen Hao Dong, David Chong, Jal Hordan
+Soft Dev
+K09 -- Simple Path to Greatness
+       Starting off with Flask
+2021-10-01
+
+Q0 - We have seen similar syntax in java, when instantiating a class.
+     For example, `ArrayList<> list = new ArrayList<String>()` creates an ArrayList object.
+
+Q1 - David said that the '/' could be for files, because each branch of the file
+     has another slash. For example ~/workshop/09_flask-v0. I said that it could also
+     be the url, because each page has their own '/'.
+
+Q2 - We weren't sure, David thought that it would print on the website, but I thought
+     it might just be in the terminal, and I've seen some people use the syntax
+     `if __name__ == '__main__':`, so I thought it'll print out '__main__'.
+
+Q3 - David thought that it wouldnt print anything, because there was no code that
+     used the returned value. I thought that the function returned the html data
+     sent to the user, so it would show the text in the web browser if you go to the site.
+
+Q4 - We haven't really seen similar constructs in other languages, unless it is
+     referring to the '.' in `app.run()`, in which case it is the same as calling
+     object methods in other languages.
+
+After running it, it shows that it is `Serving Flask app 'app'` and that it is running
+on the address 'http://127.0.0.1:5000/' which is the localhost ip. When going to the url,
+it shows the returned text. In addition, when opening the app, it prints '__main__' as
+well as what seems to be the requests made to the server.
