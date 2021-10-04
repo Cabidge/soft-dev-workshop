@@ -1,6 +1,6 @@
-# Clyde 'Thluffy' Sinclair
+# Wen Hao Dong
 # SoftDev
-# Oct 2021
+# 2021-10-04
 
 from flask import Flask
 app = Flask(__name__) #create instance of class Flask
@@ -11,9 +11,5 @@ def hello_world():
 
 app.run()
 
-# similar to previous app.py from v0 but it doesn't have a call to print __name__, so it should still say "No hable queso!" on the browser but nothing should be printed in the terminal.
-
-#RESULTS
-
-# As expected it had the same message in the browser but in the terminal it didn't print anything.
-# It just skipped the __name__ part, so it probably isn't too important
+# It'll work the same as v0, just without __main__ being printed to the terminal.
+# Worked as predicted.

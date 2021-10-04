@@ -1,6 +1,6 @@
-# Clyde 'Thluffy' Sinclair
+# Wen Hao Dong
 # SoftDev
-# Oct 2021
+# 2021-10-04
 
 from flask import Flask
 app = Flask(__name__) #create instance of class Flask
@@ -15,11 +15,11 @@ if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
     app.run()
 
-#Has a string before returning __name__, but this time it says something different (same idea though)
-#The rest of hello_world() is the same
-#Has an if statement now that check whether the __name__ is __main__, which should be true
-#The if statement now determines whether the last to lines are called, meaning that if it is true the debuger is turned on and app.py is ran, otherwise not
-
-#RESULTS
-
+# If the file is run directly, the server will start with debug mode
+# active, and when debug mode is active, changing the code will
+# refresh the page in the browser.
+# If the file is imported, however, the server will not be run.
 #
+# Editing this file will automatically update the contents of
+# the page, but you still need to manually refresh it in the browser
+# to see the changes.

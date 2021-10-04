@@ -1,6 +1,6 @@
-# Clyde 'Thluffy' Sinclair
+# Wen Hao Dong
 # SoftDev
-# Oct 2021
+# 2021-10-04
 
 from flask import Flask
 app = Flask(__name__) #create instance of class Flask
@@ -13,10 +13,10 @@ def hello_world():
 
 app.run()
 
-#Two print statments instead of one, interesting
-#The second print statement is familiar from v0 but the first one adds an extra string before it, maybe it will print right before on the same line.
-#The rest looks about the same, so they only thing that should change is the terminal.
-
-#RESULTS
-
-#It did not print on the same line, but on the line before. Otherwise, it went as expected and printed the extra string before everything else was kept the same.
+# Whenever someone goes to the address, it will print:
+# about to print __name__...
+# __main__
+# into the terminal.
+# The page will also still show "No hablo queso!" in the browser.
+# 
+# Worked as predicted.

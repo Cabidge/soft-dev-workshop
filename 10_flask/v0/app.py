@@ -1,6 +1,6 @@
-# Clyde 'Thluffy' Sinclair
+# Wen Hao Dong
 # SoftDev
-# Oct 2021
+# 2021-10-04
 
 from flask import Flask
 app = Flask(__name__) # Q0: Where have you seen similar syntax in other langs?
@@ -11,6 +11,7 @@ def hello_world():
     return "No hablo queso!"  # Q3: Will this appear anywhere? How u know?
 
 app.run()  # Q4: Where have you seen similar construcs in other languages?
-                
-#Same as the app.py from KO9, should print the __name__ in the terminal, which is __main__, and print "No hable queso!" on the browser.
-#Worked as expected and as it did previously
+
+# Worked the exact same as K09.
+# __main__ is printed in the terminal along with the GET requests,
+# and "No hablo queso" is displayed in the browser.

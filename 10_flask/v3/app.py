@@ -1,6 +1,6 @@
-# Clyde 'Thluffy' Sinclair
+# Wen Hao Dong
 # SoftDev
-# Oct 2021
+# 2021-10-04
 
 from flask import Flask
 app = Flask(__name__) #create instance of class Flask
@@ -14,10 +14,9 @@ def hello_world():
 app.debug = True
 app.run()
 
-#The same extra string is still there, but, and the rest looks similar
-#Right before it runs "app.debug = True" is stated
-#It usually says that the debuger is off, so maybe app.debug = True turns it on?
-
-#RESULTS
-
-#Everything went the same as v2 but the debugger is now on!
+# The server will start in debug mode, as opposed to
+# production mode (whatever debug mode means??)
+# 
+# It said that debug mode was on, and it shows a
+# debugging pin.
+# For the most part, it functioned the same as before.
