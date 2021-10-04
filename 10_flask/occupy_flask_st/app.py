@@ -1,9 +1,10 @@
 from flask import Flask
+import occupations
 app = Flask(__name__)
 
 @app.route("/")
 def h():
-    return "HI"
+    return occupations.weighted_selection()
 
 if __name__ == "__main__":
     app.debug = True
