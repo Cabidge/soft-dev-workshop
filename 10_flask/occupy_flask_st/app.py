@@ -5,6 +5,12 @@ app = Flask(__name__)
 @app.route("/")
 def h():
     return f"""
+        <h1>
+            Fabulous Frogs:
+            David Chong (with Fluff),
+            Wen Hao Dong (with Jal Hordan),
+            and Austin Ngan (with Gerald)
+        </h1>
         {"<br>".join(occupations.jobs)} 
         <br>
         <b>Random weighted occupation:</b> {occupations.weighted_selection()}
