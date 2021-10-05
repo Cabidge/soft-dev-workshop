@@ -4,7 +4,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def h():
-    return occupations.weighted_selection()
+    return f"""
+        {"<br>".join(occupations.jobs)} 
+        <br>
+        <b>Random weighted occupation:</b> {occupations.weighted_selection()}
+    """
 
 if __name__ == "__main__":
     app.debug = True
