@@ -1,5 +1,6 @@
 # David Chong, Wen Hao Dong, Austin Ngan
 # SoftDev
+# K11 -- Flask Static site intro
 # 2021-10-06
 
 # DEMO
