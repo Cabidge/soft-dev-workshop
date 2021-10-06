@@ -1,3 +1,7 @@
+David Chong, Wen Hao Dong, Austin Ngan
+SoftDev
+2021-10-06
+
 -- Predictions:
 When we go to localhost:5000, the web browser will display:
 "No hablo queso!" but in the terminal, it will print out:
