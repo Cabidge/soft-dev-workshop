@@ -23,3 +23,6 @@ The model_tmplt.html file has some interesting syntax like
 {% for item in collection %} which is reminiscent of python's
 for loop, and {% endfor %} which could be assumed to signify
 the end of the for loop block.
+
+-- Observations:
+Our predictions were correct.
