@@ -1,6 +1,7 @@
-# Clyde 'Thluffy' Sinclair
+# The Fabulous Frogs (David Chong, Wen Hao Dong, Austin Ngan)
 # SoftDev
-# Oct 2021
+# K12 -- Flask Templates
+# 2021-10-07
 
 from flask import Flask, render_template #Q0: What happens if you remove render_template from this line?
 app = Flask(__name__)
