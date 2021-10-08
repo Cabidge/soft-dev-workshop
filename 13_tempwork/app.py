@@ -1,9 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/occupyflaskst")
 def main():
-    return ""
+    return render_template("tablified.html")
 
-app.run()
+if __name__ == "__main__":
+    app.debug = True
+    app.run()
