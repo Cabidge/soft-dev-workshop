@@ -42,9 +42,15 @@
           </tr>
           {% for job, values in data.items() %}
             <tr>
+              {% if job == occ %}
+              <td><b>{{ job }}</b></td>
+              <td><b>{{ values[0] }}</b></td>
+              <td><b>{{ values[1] }}</b></td>
+              {% else %}
               <td>{{ job }}</td>
               <td>{{ values[0] }}</td>
               <td>{{ values[1] }}</td>
+              {% endif %}
             </tr>
           {% endfor %}
         </table>
