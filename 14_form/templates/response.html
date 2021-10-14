@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <!--
     Selective Soup | Justin Zou (Piggy), Wen Hao Dong (Jal Hordan), Roshani Shrestha (Pete)
-    SoftDev 
-    K14: Form and Function - Notes for app.py
+    SoftDev
+    K14: Form and Function
     2021-10-15
 -->
 
-
 <html>
-
   <head>
     <title> RESPONSE PAGE </title>
   </head>
@@ -18,14 +16,8 @@
         Selective Soup | Justin Zou, Wen Hao Dong, Roshani Shrestha (Pete)
     </h1>
 
-
-    <h3>
-      Username: {{ username }}
-    </h3>
-    Request Method Used: {{ request }}
-    <br>
-    Hello there, stranger!    
-    <br>
+    <h2> Hello there, {{ username }}! </h2>
+    <p> Username: {{ username }} </p>
+    <p> Request Method: {{ method }} </p>
   </body>
-
 </html>

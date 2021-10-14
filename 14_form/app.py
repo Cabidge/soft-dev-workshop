@@ -53,7 +53,7 @@ def authenticate(): # function that runs after the user submits their inputs
     print("***DIAG: request.headers ***")
     print(request.headers) # same as previous function except with some different values such as the referer which is just the URL of localhost
     # return "Waaaa hooo HAAAH"  #response to a form submission
-    return render_template('response.html', username=request.args['username'], request=request)
+    return render_template('response.html', username=request.args['username'], method=request.method)
 
 
     
