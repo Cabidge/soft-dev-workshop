@@ -1,6 +1,6 @@
 # Selective Soup | Justin Zou (Piggy), Wen Hao Dong (Jal Hordan), Roshani Shrestha (Pete)
 # SoftDev 
-# K14: Form and Function - Notes for app.py
+# K14: Form and Function
 # 2021-10-15 
 
 from flask import Flask             #facilitate flask webserving
