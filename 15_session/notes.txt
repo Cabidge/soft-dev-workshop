@@ -22,3 +22,10 @@ sources:
 - https://www.w3schools.com/tags/ref_httpmethods.asp
 - https://stackoverflow.com/questions/504947/when-should-i-use-get-or-post-method-whats-the-difference-between-them
 - https://stackoverflow.com/questions/46585/when-do-you-use-post-and-when-do-you-use-get
+
+-- Dev Console Observations
+When we go to our flask site, the dev console prints the requests it makes to
+the server, much like how the flask console prints the requests it receives.
+
+The request it prints also has a drop down which includes extra information
+like the request and response headers and cookies.
