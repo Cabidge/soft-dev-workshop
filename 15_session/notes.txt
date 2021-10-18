@@ -29,3 +29,15 @@ the server, much like how the flask console prints the requests it receives.
 
 The request it prints also has a drop down which includes extra information
 like the request and response headers and cookies.
+
+Also, the console by default only displays failed requests. To see *all* requests,
+you need to toggle the 'Requests' button at the top right of the console to the left
+of the gear.
+
+After poking around some more and tweaking the K14 assignment to use POST requests,
+a few discoveries were made:
+- The flask app won't accept the request if the decorator (@app.route(...)) didn't
+  have a methods parameter with a list containing 'POST'
+  (@app.route('/auth', methods=['GET', 'POST']).
+- The site works the same as long as you replace all instances of request.args with
+  request.form.
