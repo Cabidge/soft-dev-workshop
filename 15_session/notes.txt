@@ -1,6 +1,6 @@
 Selective Soup | Justin Zou (Piggy), Wen Hao Dong (Jal Hordan), Roshani Shrestha (Pete)
 SoftDev
-K15: Sessions Greetings
+K15: Sessions Greetings - Notes
 2021-10-18
 
 -- GET vs POST
@@ -33,12 +33,12 @@ When we go to our flask site, the dev console prints the requests it makes to
 the server, much like how the flask console prints the requests it receives.
 
 The request it prints also has a drop down which includes extra information
-like the headers (response and request), cookies, request payload, response,
+like the headers (response and request), cookies, request payload, response, 
 cache information, request timings, and stack trace.
 
 The headers section under a request method has initial information such as its status, the version, and the referrer policy.
 The response headers section includes information about content length, content type, date, and server.
-The request headers section includes information about things such as the connection, host, referer, and user agent.
+The request headers section includes information about things such as the connection, host, referer, and user agent.  
 
 Also, the console by default only displays failed requests. To see *all* requests,
 you need to toggle the 'Requests' button at the top right of the console to the left
