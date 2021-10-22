@@ -18,11 +18,18 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 # < < < INSERT YOUR TEAM'S POPULATE-THE-DB CODE HERE > > >
 
 # -- courses.csv
+
+# Creates the table with the correct column names and types
 c.execute("CREATE TABLE courses (code TEXT, mark INTEGER, id INTEGER)")
 
 with open("courses.csv", "r") as courses_file:
     reader = csv.DictReader(courses_file)
     for row in reader:
+        # f-strings were used to make commands more readable
+        # instead of using string concatenation
+
+        # The repr() function, when called with a string,
+        # automatically adds quotes around them.
         command = f"""
             INSERT INTO courses VALUES
               ({repr(row['code'])},
