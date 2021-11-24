@@ -8,11 +8,15 @@ from flask import Flask, render_template
 from urllib import request
 import json
 
+KEY = ""
+with open("key_nasa.txt", "r") as key_file:
+    KEY = key_file.read()
+
 app = Flask(__name__)
 
 @app.route("/")
 def disp_page():
-    page = request.urlopen("https://api.nasa.gov/planetary/apod?api_key=Bh5EFULUqcQmnVqskzAFlyrq3d4Ubw6vcIzsIq30")
+    page = request.urlopen(f"https://api.nasa.gov/planetary/apod?api_key={KEY}")
     print(page)
     url_dict = json.loads(page.read())
     print(url_dict['url'])
