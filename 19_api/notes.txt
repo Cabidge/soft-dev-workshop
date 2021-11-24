@@ -4,4 +4,4 @@ K19 -- A RESTful Journey Skyward
 2021-11-23
 time spent: 1 hour
 
-When you call .read() on the request object you get from urlopen() twice, the first time gives you the JSON data but the second time returns None
+When you call .read() on the request object you get from urlopen() twice, the first time gives you the JSON data but the second time returns None.
