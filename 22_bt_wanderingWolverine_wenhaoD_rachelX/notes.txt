@@ -2,3 +2,5 @@ The meta viewport tag in head makes it so the website is automatically adjusted 
 
 To style a button, you just add a btn class to the tag and a btn-[type] class to give it a color.
 The button types are: primary, secondary, success, danger, warning, info, light, dark, and link.
+You can also instead add the btn-outline-[type] class for outline buttons instead.
+Adding a btn-lg or btn-sm class will make the button large or small respectively.
