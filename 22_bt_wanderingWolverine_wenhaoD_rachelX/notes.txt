@@ -1,0 +1,4 @@
+The meta viewport tag in head makes it so the website is automatically adjusted based on the size of the device.
+
+To style a button, you just add a btn class to the tag and a btn-[type] class to give it a color.
+The button types are: primary, secondary, success, danger, warning, info, light, dark, and link.
