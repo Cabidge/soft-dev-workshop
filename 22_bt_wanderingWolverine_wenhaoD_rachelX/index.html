@@ -329,6 +329,51 @@ K22 -- Who Does Frame Work For?
         <div class="alert alert-dark" role="alert">
           A simple dark alert—check it out!
         </div>
+      <h4>I wonder what this button will do...</h4>
+      <!-- Modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Oooh, what's this?
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Oh! It's a pop up modal!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ultrices purus, eget efficitur mi. Fusce sed nunc interdum, pretium sem eget, aliquam est. Proin placerat tellus et lacus efficitur aliquet. Integer pharetra dolor justo, placerat porttitor justo cursus nec. Fusce vel sapien quam. Integer at dolor eget ligula venenatis scelerisque. Donec velit enim, pellentesque in orci sit amet, dapibus vehicula sapien.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BASIC MODAL STRUCTURE 
+        -- Adding a fade class will make the modal animate when popping up
+        <div class="modal fade" id="[MODAL_ID]" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Oh! It's a pop up modal!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ultrices purus, eget efficitur mi. Fusce sed nunc interdum, pretium sem eget, aliquam est. Proin placerat tellus et lacus efficitur aliquet. Integer pharetra dolor justo, placerat porttitor justo cursus nec. Fusce vel sapien quam. Integer at dolor eget ligula venenatis scelerisque. Donec velit enim, pellentesque in orci sit amet, dapibus vehicula sapien.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        -- Optional button that activates modal:
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#[MODAL_ID]">
+          Oooh, what's this?
+        </button>
+      -->
     </div>
   </body>
 </html>
