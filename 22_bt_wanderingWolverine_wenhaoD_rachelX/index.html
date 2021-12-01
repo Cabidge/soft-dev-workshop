@@ -397,6 +397,17 @@ K22 -- Who Does Frame Work For?
       <input class="form-control form-control-sm" type="text" placeholder="i can be smoll...">
 
       <br>
+      <p>Floating labels! (very cool beans)</p>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <br>
       <p>Input groups</p>
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Username">
@@ -407,5 +418,36 @@ K22 -- Who Does Frame Work For?
         Further reading: https://getbootstrap.com/docs/5.1/forms/overview/
       -->
     </div>
+    <!--
+      The utility classes equate to the following css styling:
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        text-align: center;
+    
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+
+        border-top: 1px solid #dee2e6;
+      }
+    -->
+    <footer class="d-flex flex-column justify-content-center align-items-center text-center py-3 my-4 border-top">
+      <p>And those were our examples of what Bootstrap has to offer.</p>
+      <p>
+        We weren't able to cover everything, so we tried showing what will likely
+        be the most useful or were interesting.
+      </p>
+      <p>
+        Bootstrap has a large catalog of nice looking and fancy components, so
+        if you would like to learn more, check out their
+        <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">official guide</a>.
+      </p>
+    </footer>
   </body>
 </html>
