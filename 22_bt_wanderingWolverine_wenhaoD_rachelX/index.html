@@ -111,7 +111,8 @@ K22 -- Who Does Frame Work For?
           </h2>
           <div id="collapse-two" class="accordion-collapse collapse" aria-labelledby="head-two" data-bs-parent="#accordion-example">
             <div class="accordion-body">
-              <div class="card" style="width: 18rem;">
+              <!-- Card -->
+              <div class="card" style="width: 18rem;"> <!-- Inline style to limit size of card -->
                 <img src="https://www.clipartmax.com/png/middle/14-147997_cute-sleeping-zs-food-cliparts-free-download-clip-art-zzz-clipart.png" class="card-img-top">
                 <div class="card-body"> <!-- building block of the card -->
                   <h5 class="card-title">Card title</h5>
@@ -119,6 +120,22 @@ K22 -- Who Does Frame Work For?
                   <a href="https://wakeup.isadoradigitalagency.com/" target="_blank" class="btn btn-secondary">Go wake this website up</a>
                 </div>
               </div>
+              <!-- BASIC STRUCTURE OF CARD
+                <div class="card">
+                  <img src="[IMG_URL]" class="card-img-top">               -- OPTIONAL
+                  <div class="card-body">
+                    <h* class="card-title">[CARD_TITLE]</h*>
+                    <h* class="card-subtitle"></h*>                        -- OPTIONAL
+                    <p class="card-text">[CARD_TEXT]</p>
+                    <a href="[LINK_URL]" class="card-link">[LINK_TEXT]</a> -- OPTIONAL
+                  </div>
+                </div>
+
+                h* refers to any h tag, e.g. h4, h5, or h6
+                Cards are very customizable, so you can add a variety of
+                different other components inside of them.
+                Further reading: https://getbootstrap.com/docs/5.1/components/card/
+              -->
             </div>
           </div>
           <h2 class="accordion-header" id="head-three">
@@ -128,8 +145,9 @@ K22 -- Who Does Frame Work For?
           </h2>
           <div id="collapse-three" class="accordion-collapse collapse" aria-labelledby="head-three" data-bs-parent="#accordion-example">
             <div class="accordion-body">
+              <p>These images automatically scroll!</p>
               <!-- Carousel -->
-              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*" class="d-block w-100">
@@ -143,15 +161,19 @@ K22 -- Who Does Frame Work For?
                 </div>
                 <!-- Controls to change pictures -->
                 <!-- we can also use <a> tags and add role="button" -->
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <!-- UNCOMMENT ME!!
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
-                </button> -->
+                </button>
+                -->
               </div>
+              <br>
+              <p>You can also add control buttons to these! Peek at the source code to see how!</p>
             </div>
           </div>
         </div>
