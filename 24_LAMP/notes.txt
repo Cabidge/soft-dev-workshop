@@ -1,0 +1,4 @@
+To create a droplet, you need to go to your team page and go to the droplets tab.
+A droplet requires a distribution (default is Ubuntu), a cpu plan, and an optional backup option.
+You also have a number of choices for the server location.
+For authentication, you can use SSH keys or a password.
