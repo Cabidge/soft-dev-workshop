@@ -1,3 +1,9 @@
+Wen Hao Dong, David Chong, Liesel Wong
+SoftDev
+K24: Cold LAMPin w Flav
+2021-01-17
+time spent: 1.0 hour
+
 To create a droplet, you need to go to your team page and go to the droplets tab.
 A droplet requires a distribution (default is Ubuntu), a cpu plan, and an optional backup option.
 You also have a number of choices for the server location.
