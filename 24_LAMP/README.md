@@ -9,6 +9,7 @@ Guide to creating an ubuntu 20.04 virtual machine ("droplet") and installing Apa
 
 - A DigitalOcean account (possibly with free credits from the [GitHub student edu pack](https://education.github.com/pack))
 - Basic knowledge of terminal commands (like `cd`, `nano`, or the like)
+- An [SSH key pair](https://www.google.com/amp/s/www.ssh.com/academy/ssh/keygen%3fhs_amp=true) set up
 
 ### Creating a Droplet
 
