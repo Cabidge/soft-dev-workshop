@@ -3,7 +3,7 @@
 ## Overview
 Guide to creating an ubuntu 20.04 virtual machine ("droplet") and installing Apache2 web server on it.
 
-### Estimated Time Cost: _
+### Estimated Time Cost: ~10 minutes
 
 ### Prerequisites:
 
@@ -60,8 +60,6 @@ Guide to creating an ubuntu 20.04 virtual machine ("droplet") and installing Apa
 * https://www.digitalocean.com/docs/droplets/how-to/connect-with-ssh/putty/
 * https://www.digitalocean.com/docs/droplets/how-to/add-ssh-keys/create-with-openssh/
 * https://www.digitalocean.com/docs/droplets/how-to/connect-with-ssh/openssh/
-
-(please verify ; some of these are old links)
 
 ---
 
