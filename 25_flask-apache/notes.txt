@@ -1,0 +1,14 @@
+Wen Hao Dong, David Chong, Liesel Wong
+SoftDev
+K25: Apache, Jump On It
+2021-01-19
+time spent: 2.0 hour
+
+The flask app on apache seems to break if there isn't a "if __name__ == '__main__'" for the app.run() line
+
+Adding the following lines to your wsgi file allows you to set the directory of your venv:
+```
+WSGIDaemonProcess <whatever> python-home=path/to/venv
+WSGIProcessGroup <whatever>
+WSGIApplicationGroup %{GLOBAL}
+```
