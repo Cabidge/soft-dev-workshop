@@ -10,26 +10,20 @@
 
 //Do whatever you think is needed. Think: S I M P L E.   Think: S M A R T.
 
-function fact(n) {
-  if (n <= 1) {
-    return 1;
-  } else {
-    return fact(n - 1) * n;
-  }
-}
+const fact = (n) => (n <= 1 ? 1 : fact(n - 1) * n);
 
 console.log("fact");
 for (let i = 0; i < 10; i++) {
   console.log(i, fact(i));
 }
 
-function fib(n) {
+const fib = function (n) {
   if (n <= 1) {
     return n;
   } else {
     return fib(n - 1) + fib(n - 2);
   }
-}
+};
 
 console.log("fib");
 for (let i = 0; i < 10; i++) {
