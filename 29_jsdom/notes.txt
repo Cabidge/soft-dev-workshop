@@ -1,0 +1,13 @@
+Wen Hao Dong, Aaron Contreras
+SoftDev
+K29 -- DOMfoolery++
+2022-02-10
+time spent: 2.0
+
+Javascript has a document object with useful functions like:
+ - getElementById
+ - getElementsByClassName
+ - getElementsByTagName
+
+<element>.addEventListener is cool, you can have js execute a function
+whenever the user does something.
