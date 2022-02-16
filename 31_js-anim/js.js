@@ -13,6 +13,7 @@ let radius = 0;
 let growing = true;
 
 const draw = (a) => {
+  stop();
   if (growing) {
     radius++;
     if (radius >= c.width / 2) {
@@ -25,7 +26,9 @@ const draw = (a) => {
     }
   }
   clear();
+  ctx.beginPath();
   ctx.ellipse(250, 250, radius, radius, 0, 0, 2 * Math.PI);
+  ctx.fill();
   requestID = window.requestAnimationFrame(draw);
 };
 
