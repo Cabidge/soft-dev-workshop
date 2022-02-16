@@ -3,7 +3,7 @@ const ctx = c.getContext("2d");
 
 const halfWidth = c.width / 2;
 
-ctx.fillStyle = "lime";
+//ctx.fillStyle = "lime";
 
 const clear = () => {
   ctx.clearRect(0, 0, c.width, c.height);
@@ -28,6 +28,10 @@ const draw = (a) => {
     }
   }
   clear();
+
+  // RGB Circle
+  ctx.fillStyle = `hsl(${Math.floor(a * 0.1) % 360}, 100%, 50%)`;
+
   ctx.beginPath();
   ctx.ellipse(halfWidth, halfWidth, radius, radius, 0, 0, 2 * Math.PI);
   ctx.fill();
