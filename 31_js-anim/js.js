@@ -1,6 +1,8 @@
 const c = document.getElementById("slate");
 const ctx = c.getContext("2d");
 
+const halfWidth = c.width / 2;
+
 ctx.fillStyle = "lime";
 
 const clear = () => {
@@ -16,7 +18,7 @@ const draw = (a) => {
   stop();
   if (growing) {
     radius++;
-    if (radius >= c.width / 2) {
+    if (radius >= halfWidth) {
       growing = false;
     }
   } else {
@@ -27,7 +29,7 @@ const draw = (a) => {
   }
   clear();
   ctx.beginPath();
-  ctx.ellipse(250, 250, radius, radius, 0, 0, 2 * Math.PI);
+  ctx.ellipse(halfWidth, halfWidth, radius, radius, 0, 0, 2 * Math.PI);
   ctx.fill();
   requestID = window.requestAnimationFrame(draw);
 };
