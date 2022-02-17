@@ -43,8 +43,6 @@ let width, height;
 dvd.onload = () => {
   width = dvd.width * scale;
   height = dvd.height * scale;
-  x = Math.random() * (c.width - width);
-  y = Math.random() * (c.height - height);
 };
 
 dvd.src =
@@ -88,6 +86,8 @@ btnGo.addEventListener("click", () => {
 
 btnGo2.addEventListener("click", () => {
   stop();
+  x = Math.random() * (c.width - width);
+  y = Math.random() * (c.height - height);
   drawLoop(0, drawBounce);
 });
 
