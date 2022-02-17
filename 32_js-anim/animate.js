@@ -75,16 +75,16 @@ const stop = () => {
   window.cancelAnimationFrame(requestID);
 };
 
-const btnGo = document.getElementById("btn-go");
-const btnGo2 = document.getElementById("btn-go2");
+const btnDot = document.getElementById("btn-go");
+const btnDVD = document.getElementById("btn-go2");
 const btnStop = document.getElementById("btn-stop");
 
-btnGo.addEventListener("click", () => {
+btnDot.addEventListener("click", () => {
   stop();
   drawLoop(0, drawDot);
 });
 
-btnGo2.addEventListener("click", () => {
+btnDVD.addEventListener("click", () => {
   stop();
   x = Math.random() * (c.width - width);
   y = Math.random() * (c.height - height);
