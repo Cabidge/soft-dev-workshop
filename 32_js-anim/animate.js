@@ -35,6 +35,7 @@ const drawDot = () => {
 let x, y;
 let dx = 1;
 let dy = 1;
+let speed = 1;
 
 const dvd = new Image();
 const scale = 0.1;
@@ -49,14 +50,14 @@ dvd.src =
   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/DVD_logo.svg/1200px-DVD_logo.svg.png";
 
 const drawBounce = () => {
-  x += dx;
-  y += dy;
+  x += dx * speed;
+  y += dy * speed;
 
-  if (x <= 0 || x >= c.width - width) {
+  if ((x <= 0 && dx < 0) || (x >= c.width - width && dx > 0)) {
     dx *= -1;
   }
 
-  if (y <= 0 || y >= c.height - height) {
+  if ((y <= 0 && dy < 0) || (y >= c.height - height && dy > 0)) {
     dy *= -1;
   }
 
@@ -77,6 +78,7 @@ const stop = () => {
 
 const btnDot = document.getElementById("btn-go");
 const btnDVD = document.getElementById("btn-go2");
+const speedSlider = document.getElementById("speed");
 const btnStop = document.getElementById("btn-stop");
 
 btnDot.addEventListener("click", () => {
@@ -89,6 +91,11 @@ btnDVD.addEventListener("click", () => {
   x = Math.random() * (c.width - width);
   y = Math.random() * (c.height - height);
   drawLoop(0, drawBounce);
+});
+
+speedSlider.addEventListener("input", (e) => {
+  console.log(e);
+  speed = e.target.value;
 });
 
 btnStop.addEventListener("click", stop);
