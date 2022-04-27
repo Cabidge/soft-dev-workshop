@@ -1,0 +1,46 @@
+Tabular == SQL-like relational dbs
+
+Development -> Denormalization of tabular db
+
+Denormalization == Adding redundant data to improve read performance
+	ie. creating a new table which contains information from
+	existing tables to reduce number of join queries
+
+Data dictates development of application
+
+Denormalization -> Restructuring -> Performance drop
+
+MongoDB Data-modeling: Develop application -> Define data model
+	-> Improve application <-> Improve data model
+
+Improving data model incurs no downtime with MongoDB
+
+Data model evolution is easy & flexible
+
+Data model is designed at application level
+
+Design is part of each phase of application lifetime
+
+What affects data model:
+- Data the app needs
+- Read/write usage of data
+
+Steps:
+1. Evaluate app workload (current & predicted workload)
+2. Map out entities & relationships (link or embed?)
+3. Finalize model for each collection (apply relevant design patterns)
+
+Linking == Point to another collection by id
+
+Embedding == Contain another collection directly
+
+Schema versioning == differentiate between old and new schemas with version
+	numbering to easily deal with processing new schemas
+
+Bucket pattern == adding data over a period of time into a single document
+	rather than creating multiple documents per measurement
+
+Computed pattern == writing extra precomputed information to
+	reduce computation on read
+
+Reads are often more common than writes
