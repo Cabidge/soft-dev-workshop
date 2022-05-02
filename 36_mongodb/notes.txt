@@ -1,0 +1,35 @@
+JSON is readable but is slow to parse and not space efficient
+
+BSON == Binary JSON
+	- Binary representation of JSON
+
+BSON is fast and space efficient but not human readable
+
+BSON also include dates and raw binary data types
+
+JSON <=> BSON
+
+`$ mongodump ...` == export BSON
+
+`$ mongoexport ...` == export JSON
+
+`$ mongorestore ...` == import BSON
+
+`$ mongoimport ...` == import JSON
+
+Queries must be valid JSON
+
+Filter for documents with state:NY and city:ALBANY
+	== {"state": "NY", "city": "ALBANY"}
+
+Using find in the mongo shell:
+	1. `$ show dbs`
+	2. `$ use <database>`
+	3. `$ show collections`
+	4. `$ db.<collection>.find(<query>)`
+
+Count how many zipcodes in NY: `$ db.zips.find({"state": "NY"}).count()`
+
+Pretty print: `$ db.<collection>.find(<query>).pretty()`
+
+

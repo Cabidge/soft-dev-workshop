@@ -1,0 +1,12 @@
+MongoDB == NoSQL Document database
+
+Document == JSON
+
+Atlas == DBaaS
+
+Atlas features:
+- Cluster == groups of servers that store data
+- Replica set == connected MongoDB instances storing the same data
+	- Redundancy ensures data is still accessible if one server breaks
+
+
