@@ -1,0 +1,35 @@
+Every document has a unique _id value
+
+Documents can have the same exact fields and values (minus _id)
+
+Documents can also be completely different from one another in shape
+
+It isn't good practice however to do either of the two things above
+
+`$ db.<collection>.findOne()` to get a document to get an idea of the shape
+
+`$ db.<collection>.insert(<documents>)` to insert a document in the mongo shell
+
+Inserting without an _id field, MongoDB automatically generates one
+
+`$ ...insert(<docs>, { "ordered": false })` allows documents that don't
+	have duplicate _id fields to be inserted without fault
+
+`$ db.<new_collection>.insert(...)` creates a new collection if it doesn't exist
+
+`$ use <new_collection>` also creates a new collection, but the collection
+	won't actually be created until you actually use it, like insert
+	into it
+
+`$ db.<collection>.updateMany(<query>, {"$inc": {<field>: <value>}})` finds all
+	documents that match the given <query> and increments their <field>
+	by a given <value>
+
+`$ ...updateOne(<query>, {"$set": {<field>: <value>}})` finds the first
+	document matching the <query> and sets their <field> to <value>
+
+`{"$push": {<field>: <value>}}` adds an element to an array field
+
+`$ db.<collection>.deleteMany(<query>)` Deletes all documents matching <query>
+
+`$ db.<collection>.drop()` Deletes an entire collection

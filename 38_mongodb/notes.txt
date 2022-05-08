@@ -1,0 +1,16 @@
+{ <field>: <value> } == { <field>: { "$eq": <value> } }
+
+{ <field>: { "$all": [ <values>... ] } matches for an array that contains
+	all of the given values or more
+
+{ <field>: { "$size": ...  } matches the array's size
+
+...find(<query>, { <field>: 1, <field>: 1 }) will include only the specified
+	fields of the "projection" in the results
+
+Projection:
+- 1 == include the field
+- 0 == exclude the field
+
+1s and 0s cannot be mixed in projections
+	- Exception: Specifying you want to exclude `_id`
